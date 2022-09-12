@@ -5,8 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 steps {
-               echo "PATH = ${M2_HOME}/bin:${PATH}"
-                echo "M2_HOME = /opt/maven"
+               echo 'Build..'
             }
             }
         }
