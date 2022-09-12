@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 steps {
-                sh 'mvn clean install package'
+               echo "PATH = ${M2_HOME}/bin:${PATH}"
+                echo "M2_HOME = /opt/maven"
             }
             }
         }
